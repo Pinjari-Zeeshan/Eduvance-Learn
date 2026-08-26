@@ -1,0 +1,1 @@
+export const getOriginalPrice = (price: number) => Math.ceil((price * 1.3) / 100) * 100;
