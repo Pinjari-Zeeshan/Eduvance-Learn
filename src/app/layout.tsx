@@ -2,6 +2,7 @@ import React from 'react';
 import type { Metadata, Viewport } from 'next';
 import { Plus_Jakarta_Sans, JetBrains_Mono } from 'next/font/google';
 import { Toaster } from 'sonner';
+import AIChat from '@/components/AIChat';
 import '../styles/tailwind.css';
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -46,6 +47,7 @@ export default function RootLayout({
           <span className="rakhi-banner__mark" aria-hidden="true">✦</span>
         </div>
         {children}
+        <AIChat />
         <Toaster
           position="bottom-right"
           toastOptions={{
